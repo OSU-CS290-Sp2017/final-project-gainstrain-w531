@@ -1,0 +1,44 @@
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #eee;
+}
+
+h1 {
+  padding: 20px;
+  background-color: #ff5733;
+  margin: 0px;
+  color: white;
+}
+
+.navbar {
+  font-size: 22px;
+  background-color: #fff;
+}
+
+.navlist {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navitem {
+  display: inline-block;
+}
+
+.navitem:hover {
+  background-color: rgb(255, 56, 122, 0.2);
+}
+
+.navitem a {
+  display: inline-block;
+  color: #454545;
+  padding: 10px 20px;
+}
+
+.navitem.right {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
