@@ -3,7 +3,6 @@
 
 My idea of the basic layout of each of the 4 pages is
 
-              *using flexboxes*
 
 |           Week 1             |           Week 2             |           Week 3             |           Deload             |
 | Set 1 - 5 reps (lbs amount)  | Set 1 - 3 reps (lbs amount)  | Set 1 - 5 reps (lbs amount)  | Set 1 - 5 reps (lbs amount)  |
