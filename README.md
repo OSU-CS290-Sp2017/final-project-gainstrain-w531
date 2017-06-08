@@ -1,5 +1,7 @@
 "# final-project-gainstrain-w531"
 
+USE RAW VIEW METHOD IN GITHUB
+
 
 My idea of the basic layout of each of the 4 pages is
 
