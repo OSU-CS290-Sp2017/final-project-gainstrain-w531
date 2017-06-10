@@ -50,3 +50,17 @@ a {
 main {
   padding-left: 20px;
 }
+.error-page {
+  text-align: center;
+}
+
+.error-page h2 {
+  font-weight: 100;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+.error-page h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
