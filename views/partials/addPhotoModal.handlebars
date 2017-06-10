@@ -1,0 +1,42 @@
+<button id="add-photo-button">+</button>
+
+<div id="modal-backdrop" class="hidden"></div>
+<div id="add-photo-modal" class="hidden">
+  <div class="modal-dialog">
+
+    <div class="modal-header">
+      <h3>Add a workout</h3>
+      <button type="button" class="modal-close-button">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="exercise-selector-element">
+        <label for="exercise">Exercise</label>
+        <br>
+          <input type="radio" name="lift" value="Bench" checked> Bench Press<br>
+          <input type="radio" name="lift" value="Deadlift"> Deadlift<br>
+          <input type="radio" name="lift" value="Squat"> Squat<br>
+          <input type="radio" name="lift" value="Squat"> Overhead Press<br>
+      </div>
+      <div class="week-selector-element">
+        <label for="week">Week</label>
+        <br>
+          <input type="radio" name="week" value="week1" checked>Week1<br>
+          <input type="radio" name="week" value="week2"> Week2<br>
+          <input type="radio" name="week" value="week3"> Week3<br>
+          <input type="radio" name="week" value="week4"> Week4<br>
+      </div>
+      <div class="photo-input-element">
+        <label for="photo-caption-input">1 Rep Max</label>
+        <input type="text" class="weight-value"></input>
+        <br>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="modal-cancel-button">Cancel</button>
+      <button type="button" class="modal-accept-button">OK</button>
+    </div>
+
+  </div>
+</div>
