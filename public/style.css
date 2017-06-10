@@ -23,6 +23,10 @@ a:hover {
   padding: 20px;
 }
 
+.weeks-grid {
+  display: inline-block;;
+}
+
 .navbar {
   font-size: 22px;
   background-color: #fff;
