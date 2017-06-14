@@ -1,15 +1,12 @@
-"# final-project-gainstrain-w531"
+# Workout Tracker
 
-USE RAW VIEW METHOD IN GITHUB
+This repo contains a basic Express-based server in `server.js` that demonstrates how dynamic content can be served with Express.  Before doing anything with it you need to install dependencies:
+```
+npm install
+```
 
-This webpage is a "Worko
-
-My idea of the basic layout of each of the 4 pages is
-
-
-|           Week 1             |           Week 2             |           Week 3             |           Deload             |
-| Set 1 - 5 reps (lbs amount)  | Set 1 - 3 reps (lbs amount)  | Set 1 - 5 reps (lbs amount)  | Set 1 - 5 reps (lbs amount)  |
-| Set 2 - 5 reps (lbs amount)  | Set 2 - 3 reps (lbs amount)  | Set 2 - 3 reps (lbs amount)  | Set 2 - 5 reps (lbs amount)  |     
-| Set 3 - 5+ reps(lbs amount)  | Set 3 - 3+ reps(lbs amount)  | Set 3 - 1+ reps(lbs amount)  | Set 3 - 5 reps (lbs amount)  |
-
-The  places labeled (lbs amount) would be altered using the modal and calculating the corresponding % from the index.html page
+Then, you can start the server:
+```
+npm start
+```
+This will start the server running on port 3000 by default.  You can change the port it runs on by setting the `PORT` environment variable.  Once the server is running, you can visit it at [http://localhost:3000](http://localhost:3000).
