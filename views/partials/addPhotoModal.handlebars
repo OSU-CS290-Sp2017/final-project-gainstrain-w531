@@ -10,25 +10,14 @@
     </div>
 
     <div class="modal-body">
-      <div class="exercise-selector-element">
-        <label for="exercise">Exercise</label>
-        <br>
-          <input type="radio" name="lift" value="Bench" checked> Bench Press<br>
-          <input type="radio" name="lift" value="Deadlift"> Deadlift<br>
-          <input type="radio" name="lift" value="Squat"> Squat<br>
-          <input type="radio" name="lift" value="Squat"> Overhead Press<br>
-      </div>
-      <div class="week-selector-element">
-        <label for="week">Week</label>
-        <br>
-          <input type="radio" name="week" value="week1" checked>Week1<br>
-          <input type="radio" name="week" value="week2"> Week2<br>
-          <input type="radio" name="week" value="week3"> Week3<br>
-          <input type="radio" name="week" value="week4"> Week4<br>
-      </div>
-      <div class="photo-input-element">
-        <label for="photo-caption-input">1 Rep Max</label>
-        <input type="text" class="weight-value"></input>
+        <div class="exercise-input">
+          <label for="exercise-input-label">Exercise</label>
+          <input type="text" id="exercise"></input>
+          <br>
+        </div>
+      <div class="max-input">
+        <label for="max-input-label">1 Rep Max</label>
+        <input type="text" id="weight-value"></input>
         <br>
       </div>
     </div>
@@ -39,4 +28,5 @@
     </div>
 
   </div>
+</div>
 </div>

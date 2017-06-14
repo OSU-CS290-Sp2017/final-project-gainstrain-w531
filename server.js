@@ -40,15 +40,15 @@ app.get('/people/:person', function (req, res, next) {
   }
 });
 
-app.post('/people/:person/addPhoto', function (req, res, next) {
+app.post('/people/:person/addExercise', function (req, res, next) {
   var person = peopleData[req.params.person];
 
   if (person) {
-    if (req.body && req.body.url) {
+    if (req.body) {
 
       var photo = {
-        url: req.body.url,
-        caption: req.body.caption
+        exercise: req.body.exercise,
+        caption: req.body.weight
       };
 
       person.photos = person.photos || [];

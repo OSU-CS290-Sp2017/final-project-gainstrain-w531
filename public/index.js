@@ -63,16 +63,16 @@ function getPersonIDFromLocation() {
  */
 function insertNewPhoto() {
 
-  var photoURL = document.getElementById('photo-url-input').value || '';
-  var photoCaption = document.getElementById('photo-caption-input').value || '';
+  var personExercise = document.getElementById('exercise').value || '';
+  var personWeight = document.getElementById('weight-value').value || '';
 
-  if (photoURL.trim()) {
+  if (personExercise) {
 
     var personID = getPersonIDFromLocation();
     if (personID) {
       console.log("== Person ID:", personID);
 
-      storePersonPhoto(personID, photoURL, photoCaption, function (err) {
+      storePersonPhoto(personID, personExercise, personWeight, function (err) {
 
         if (err) {
           alert("Unable to save person's photo.  Got this error:\n\n" + err);
@@ -80,8 +80,8 @@ function insertNewPhoto() {
 
           var photoCardTemplate = Handlebars.templates.photoCard;
           var templateArgs = {
-            url: photoURL,
-            caption: photoCaption
+            exercise: personExercise,
+            weight: personWeight
           };
 
           var photoCardHTML = photoCardTemplate(templateArgs);
@@ -100,7 +100,7 @@ function insertNewPhoto() {
 
   } else {
 
-    alert('You must specify a value for the "URL" field.');
+    alert('You must specify an exercise!');
 
   }
 
@@ -111,9 +111,9 @@ function insertNewPhoto() {
  * This function will communicate with our server to store the specified
  * photo for a given person.
  */
-function storePersonPhoto(personID, url, caption, callback) {
+function storePersonPhoto(personID, exercise, weight, callback) {
 
-  var postURL = "/people/" + personID + "/addPhoto";
+  var postURL = "/people/" + personID + "/addExercise";
 
   var postRequest = new XMLHttpRequest();
   postRequest.open('POST', postURL);
@@ -128,8 +128,8 @@ function storePersonPhoto(personID, url, caption, callback) {
   });
 
   var postBody = {
-    url: url,
-    caption: caption
+    exercise: exercise,
+    weight: weight
   };
   postRequest.send(JSON.stringify(postBody));
 
