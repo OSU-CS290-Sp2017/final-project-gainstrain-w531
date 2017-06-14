@@ -48,7 +48,7 @@ app.post('/people/:person/addExercise', function (req, res, next) {
 
       var photo = {
         exercise: req.body.exercise,
-        caption: req.body.weight
+        weight: req.body.weight
       };
 
       person.photos = person.photos || [];
