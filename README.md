@@ -1,5 +1,9 @@
 # Workout Tracker
 
+What is Workout Tracker?
+Workout Tracker is designed to replace your paper workout journal. It is a simple tracker which keeps track of your wokout. Developed recently by group of computer science students who was disappointed by the selection of workout tracking apps, it combines the best features found in other apps with a minimalistic approach and a clean, easy-to-use interface. Give it a try. We know you'll love it!
+Also this is just the start if you like it we will keep improving it!
+
 This repo contains a basic Express-based server in `server.js` that demonstrates how dynamic content can be served with Express.  Before doing anything with it you need to install dependencies:
 ```
 npm install
