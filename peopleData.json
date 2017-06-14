@@ -1,1 +1,23 @@
-{"luke":{"name":"Luke Skywalker","photos":[{"weight":"315","exercise":"Deadlift"},{"exercise":"Bench Press","weight":"225"}]}}
+{"luke":
+  {"name":"Luke Skywalker",
+  "photos":[
+    {"exercise":"Deadlift","weight":"315"},
+    {"exercise":"Bench Press","weight":"225"},
+    {"exercise":"Running ","weight":"5"}
+    ]},
+
+    "Leia":{
+      "name":"Leia Organa",
+      "photos":[
+        {"exercise":"Deadlift","weight":"315"},
+        {"exercise":"Bench Press","weight":"225"},
+        {"exercise":"Running ","weight":"5"}
+        ]
+    },
+    "Yoda":{"name":"Yoda",
+    "photos":[
+      {"exercise":"Deadlift","weight":"315"},
+      {"exercise":"Bench Press","weight":"225"},
+      {"exercise":"Running ","weight":"5"}
+      ]}
+  }

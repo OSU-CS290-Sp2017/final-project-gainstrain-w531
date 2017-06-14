@@ -65,8 +65,10 @@ a:hover {
   background-color: #fff;
   border: 1px solid #ccc;
   padding: 10px;
-  text-align: center;
+  text-align:center;
   margin: 5px;
+  max-width: 45%;
+  height: 60px;
 }
 
 .person-photo-img {
