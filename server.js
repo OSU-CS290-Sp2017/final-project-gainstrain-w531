@@ -17,7 +17,7 @@ app.get('/people', function (req, res, next) {
 
   var templateArgs = {
     people: peopleData,
-    title: "Photos of People"
+    title: "Workout Tracker"
   };
 
   res.render('peoplePage', templateArgs);
@@ -32,7 +32,7 @@ app.get('/people/:person', function (req, res, next) {
     var templateArgs = {
       photos: personData.photos,
       name: personData.name,
-      title: "Photos of People - " + personData.name
+      title: "Workout Tracker - " + personData.name
     }
     res.render('photosPage', templateArgs);
   } else {
