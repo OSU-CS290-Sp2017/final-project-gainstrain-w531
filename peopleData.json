@@ -1,5 +1,5 @@
-{"luke":
-  {"name":"Luke Skywalker",
+{"Joey":
+  {"name":"Joey",
   "photos":[
     {"exercise":"Deadlift","weight":"315"},
     {"exercise":"Bench Press","weight":"225"},
@@ -7,7 +7,7 @@
     ]},
 
     "Leia":{
-      "name":"Leia Organa",
+      "name":"Leia",
       "photos":[
         {"exercise":"Deadlift","weight":"315"},
         {"exercise":"Bench Press","weight":"225"},
