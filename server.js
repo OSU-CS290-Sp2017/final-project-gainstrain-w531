@@ -79,5 +79,5 @@ app.get('*', function (req, res) {
 
 // Start the server listening on the specified port.
 app.listen(port, function () {
-  console.log("== Server listening on port", port);
+  console.log("== Server is running on port number", port);
 });
