@@ -40,7 +40,36 @@ app.get('/people/:person', function (req, res, next) {
   }
 });
 
+app.post('/people/:person/addExercise', function (req, res, next) {
+  var person = peopleData[req.params.person];
 
+  if (person) {
+    if (req.body) {
+
+      var photo = {
+        exercise: req.body.exercise,
+        weight: req.body.weight
+      };
+
+      person.photos = person.photos || [];
+
+      person.photos.push(photo);
+      fs.writeFile('peopleData.json', JSON.stringify(peopleData), function (err) {
+        if (err) {
+          res.status(500).send("Unable to save photo to \"database\".");
+        } else {
+          res.status(200).send();
+        }
+      });
+
+    } else {
+      res.status(400).send("Person photo must have a URL.");
+    }
+
+  } else {
+    next();
+  }
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
